@@ -193,4 +193,10 @@ united_kingdom << {name: "Northern Ireland", population: 1811000, capital: "Belf
 p united_kingdom
 
 # 3. Use a loop to print the names of all the countries in the UK.
+
+for countries in united_kingdom
+  p countries[:name]
+end
+
+
 # 4. Use a loop to find the total population of the UK.
