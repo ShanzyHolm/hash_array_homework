@@ -153,6 +153,11 @@ users["Erik"][:pets] << {name: "Fluffy", species: "dog"}
 p users["Erik"][:pets]
 
 # 10.  Add another person to the users hash
+
+new_users = {"Shannon" => {twitter: "Miss_S_Holmes13", lottery_numbers: [7, 13, 3, 30, 2, 49], home_town: "Brampton", pets: [{name: "Lenny", species: "cat"}, {name: "Cassie", species: "cat"}]}}
+
+p users.merge(new_users)
+
 # ============================================
 # Exercise C
 #
