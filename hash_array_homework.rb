@@ -24,6 +24,10 @@ p stops.insert(4, "Polmont")
 p stops.index "Linlithgow"
 
 # 5. Remove "Livingston" from the array using its name
+
+stops.delete("Livingston")
+p stops
+
 # 6. Delete "Cumbernauld" from the array by index
 # 7. How many stops there are in the array?
 # 8. How many ways can we return "Falkirk High" from the array?
@@ -96,6 +100,9 @@ p stops.index "Linlithgow"
 # 2. Get Erik's hometown
 # 3. Get the array of Erik's lottery numbers
 # 4. Get the type of Avril's pet Monty
+
+
+
 # 5. Get the smallest of Erik's lottery numbers
 # 6. Return an array of Avril's lottery numbers that are even
 # 7. Erik is one lottery number short! Add the number 7 to be included in his lottery numbers
