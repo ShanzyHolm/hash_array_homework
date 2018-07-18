@@ -1,120 +1,123 @@
-# Exercise A
+# # Exercise A
+# #
+# # Given the following data structure:
+# #
 #
-# Given the following data structure:
+# stops = ["Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket"]
 #
-
-stops = ["Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket"]
-
-# Complete these tasks:
+# # Complete these tasks:
+# #
+# # 1. Add "Edinburgh Waverley" to the end of the array
 #
-# 1. Add "Edinburgh Waverley" to the end of the array
-
-p stops << "Edinburgh Waverley"
-
-# 2. Add "Glasgow Queen St" to the start of the array
-
-p stops.unshift "Glasgow Queen St"
-
-# 3. Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
-
-p stops.insert(4, "Polmont")
-
-# 4. Work out the index position of "Linlithgow"
-
-p stops.index "Linlithgow"
-
-# 5. Remove "Livingston" from the array using its name
-
-stops.delete("Livingston")
-p stops
-
-# 6. Delete "Cumbernauld" from the array by index
-
-stops.delete_at(2)
-p stops
-
-# 7. How many stops there are in the array?
-
-p stops.count
-
-# 8. How many ways can we return "Falkirk High" from the array?
-
-# p stops [2]
-# p stops.delete_at(2)
-
-# 9. Reverse the positions of the stops in the array
-
-p stops.reverse
-
-# 10.  Print out all the stops using a for loop
-
-for stop in stops
-  p stop + " "
-end
+# p stops << "Edinburgh Waverley"
+#
+# # 2. Add "Glasgow Queen St" to the start of the array
+#
+# p stops.unshift "Glasgow Queen St"
+#
+# # 3. Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
+#
+# p stops.insert(4, "Polmont")
+#
+# # 4. Work out the index position of "Linlithgow"
+#
+# p stops.index "Linlithgow"
+#
+# # 5. Remove "Livingston" from the array using its name
+#
+# stops.delete("Livingston")
+# p stops
+#
+# # 6. Delete "Cumbernauld" from the array by index
+#
+# stops.delete_at(2)
+# p stops
+#
+# # 7. How many stops there are in the array?
+#
+# p stops.count
+#
+# # 8. How many ways can we return "Falkirk High" from the array?
+#
+# # p stops [2]
+# # p stops.delete_at(2)
+#
+# # 9. Reverse the positions of the stops in the array
+#
+# p stops.reverse
+#
+# # 10.  Print out all the stops using a for loop
+#
+# for stop in stops
+#   p stop + " "
+# end
 
 #============================================
 # Exercise B
 #
 # Given the following data structure:
 #
-# users = {
-#   "Jonathan" => {
-#     :twitter => "jonnyt",
-#     :lottery_numbers => [6, 12, 49, 33, 45, 20],
-#     :home_town => "Stirling",
-#     :pets => [
-#     {
-#       :name => "fluffy",
-#       :species => "cat"
-#     },
-#     {
-#       :name => "fido",
-#       :species => "dog"
-#     },
-#     {
-#       :name => "spike",
-#       :species => "dog"
-#     }
-#   ]
-#   },
-#   "Erik" => {
-#     :twitter => "eriksf",
-#     :lottery_numbers => [18, 34, 8, 11, 24],
-#     :home_town => "Linlithgow",
-#     :pets => [
-#     {
-#       :name => "nemo",
-#       :species => "fish"
-#     },
-#     {
-#       :name => "kevin",
-#       :species => "fish"
-#     },
-#     {
-#       :name => "spike",
-#       :species => "dog"
-#     },
-#     {
-#       :name => "rupert",
-#       :species => "parrot"
-#     }
-#   ]
-#   },
-#   "Avril" => {
-#     :twitter => "bridgpally",
-#     :lottery_numbers => [12, 14, 33, 38, 9, 25],
-#     :home_town => "Dunbar",
-#     :pets => [
-#       {
-#         :name => "monty",
-#         :species => "snake"
-#       }
-#     ]
-#   }
-# }
+users = {
+  "Jonathan" => {
+    :twitter => "jonnyt",
+    :lottery_numbers => [6, 12, 49, 33, 45, 20],
+    :home_town => "Stirling",
+    :pets => [
+    {
+      :name => "fluffy",
+      :species => "cat"
+    },
+    {
+      :name => "fido",
+      :species => "dog"
+    },
+    {
+      :name => "spike",
+      :species => "dog"
+    }
+  ]
+  },
+  "Erik" => {
+    :twitter => "eriksf",
+    :lottery_numbers => [18, 34, 8, 11, 24],
+    :home_town => "Linlithgow",
+    :pets => [
+    {
+      :name => "nemo",
+      :species => "fish"
+    },
+    {
+      :name => "kevin",
+      :species => "fish"
+    },
+    {
+      :name => "spike",
+      :species => "dog"
+    },
+    {
+      :name => "rupert",
+      :species => "parrot"
+    }
+  ]
+  },
+  "Avril" => {
+    :twitter => "bridgpally",
+    :lottery_numbers => [12, 14, 33, 38, 9, 25],
+    :home_town => "Dunbar",
+    :pets => [
+      {
+        :name => "monty",
+        :species => "snake"
+      }
+    ]
+  }
+}
 # Complete these tasks:
 #
 # 1. Get Jonathan's Twitter handle (i.e. the string "jonnyt")
+
+p users["Jonathan"][:twitter]
+
 # 2. Get Erik's hometown
 # 3. Get the array of Erik's lottery numbers
 # 4. Get the type of Avril's pet Monty
